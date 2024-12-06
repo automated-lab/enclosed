@@ -314,7 +314,7 @@ export const ViewNotePage: Component = () => {
 
         <Match when={getDecryptedNote() || fileAssets().length > 0}>
 
-          <div class="mx-auto max-w-1200px px-6 mt-6 flex gap-4 md:flex-row-reverse flex-col justify-center min-w-0">
+          <div class="mx-auto max-w-1200px px-3 sm:px-6 mt-6 flex gap-4 md:flex-row-reverse flex-col justify-center min-w-0">
             {getDecryptedNote() && (
               <div class="flex-1 mb-4 min-w-0">
                 <div class="flex items-center gap-2 mb-4 justify-between">
@@ -337,7 +337,7 @@ export const ViewNotePage: Component = () => {
 
             {fileAssets().length > 0 && (
               <div class="flex flex-col gap-4">
-                <div class="flex md:min-w-500px items-center h-9">
+                <div class="flex w-full items-center h-9">
                   <div class="text-muted-foreground">
                     {
                       fileAssets().length > 1
@@ -362,7 +362,7 @@ export const ViewNotePage: Component = () => {
                   )}
                 </div>
 
-                <div class="flex flex-col gap-2 md:min-w-500px">
+                <div class="flex flex-col gap-2 w-full">
                   {
                     fileAssets().map(file => (
                       <Card class="w-full rounded-md shadow-sm ">
